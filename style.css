@@ -1,0 +1,203 @@
+/* Шрифты  */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_24pt-Bold.woff2') format('woff2'),
+         url('/fonts/Inter_24pt-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_24pt-Medium.woff2') format('woff2'),
+         url('/fonts/Inter_24pt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_24pt-Regular.woff2') format('woff2'),
+         url('/fonts/Inter_24pt-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5F8F9;
+    font-family: 'Inter', sans-serif;
+}
+
+.page {
+    max-width: 1121px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+/* === ШАПКА === */
+header {
+    height: 94px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 36px;
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+}
+
+.menu_item {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btns_languages {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #00CDAC, #00B9B6);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* === ЯЗЫКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ === */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lang-text {
+    line-height: 1;
+}
+
+.language-switcher svg {
+    width: 12px;
+    height: 12px;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.language-switcher:hover svg {
+    transform: rotate(180deg);
+}
+
+/* ===  БЛОК === */
+.hero {
+    position: relative;
+    margin-top: 40px;           
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero__text {
+    max-width: 644px;
+    margin-top: 65px;          
+    padding-top: 0;             
+}
+
+.p1 {
+    font-size: 18px;
+    line-height: 140%;
+    color: #00B9B6;
+    margin-bottom: 16px;
+}
+
+.p2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #0E0E0F;
+    margin-bottom: 40px;
+}
+
+.hero__btn {
+    width: 196px;
+    height: 48px;
+    font-size: 18px;
+    padding: 0;
+}
+
+/* Картинки  */
+.hero__images {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.people {
+    width: 468px;
+    height: 468px;
+    position: relative;
+    z-index: 10;
+}
+
+.cloud1 {
+    position: absolute;
+    width: 110.4px;
+    height: 110.32px;
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+
+.cloud2 {
+    position: absolute;
+    width: 167.34px;
+    height: 85.94px;
+    right: -10px;
+    top: 110px;
+    z-index: 2;
+}
+
+.cloud3 {
+    position: absolute;
+    width: 241.72px;
+    height: 193p.94x;
+    left: -100px;
+    bottom: 45px;
+    z-index: 12;
+}
